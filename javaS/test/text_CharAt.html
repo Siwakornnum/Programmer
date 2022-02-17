@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let name = prompt('Enter you name :');
+        // name = 'siwa kornnum'
+        // console.log(name.charAt(0));
+        // let check = name.length
+        // console.log(check)
+        // console.log(nameSplit)
+        let name = prompt(`Enter you data :`)
+        let nameSplit = name.split(' ');
+
+        let x = 0;
+        for (let i of name)
+        {
+            if (name.charAt(x) !== ' ' && name.length > 4 && name.length < 20)
+            {
+                console.log(name.charAt(x));
+                x++
+
+            } else 
+            {
+                alert('ข้อความมีช่องว่าง');
+                name = prompt(`Enter you data :`)
+            }
+        }
+        alert('บันทึกข้อมูลเรียบร้อย');
+        alert(`ผู้ใช้ : ${name} \nข้อมูลตัวหนังสือ : ${name.length} ตัว`)
+    </script>
+
+</body>
+
+</html>

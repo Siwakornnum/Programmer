@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <H1 align="center">สูตรคูณ</H1>
+    <p1 id="p1"> </p1>
+    <script>
+        let number = prompt('Enter number :')
+        for (let x = number; x <= number; x++)
+        {
+            for (let y = 1; y <= 12; y++)
+            {
+                document.querySelector('#p1').innerHTML += `${x} * ${y}=${x * y} <br>`
+            }
+            document.querySelector('#p1').innerHTML += `<hr>`
+        }
+
+    </script>
+</body>
+
+</html>
